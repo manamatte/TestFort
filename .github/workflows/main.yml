@@ -26,10 +26,16 @@ jobs:
       # Runs a single command using the runners shell
       - name: Start info
         run:  echo Hello, I am starting!
-
+        
+      - name: install Gfortran
+        run:  sudo apt install gfortran
+      - name: install Cmake
+        run:  sudo apt-get install cmake
+      - name: install Build-Essential
+        run:  sudo apt-get install build-essential
+        
       # Runs a set of commands using the runners shell
       - name: install Gfortran etc..
         run: |
-          sudo apt install gfortran
-          sudo apt-get install cmake
-          sudo apt-get install build-essential
+          echo Hello, I am done!
+          echo Hello, I am done!
