@@ -43,7 +43,7 @@ jobs:
         run:  sudo cmake --build ./build
         
       - name: Simple run 
-        run:  ./build/TestFort
+        run:  ./build/TestFort/TestFort
         
       # Runs a set of commands using the runners shell
       - name: Bye
