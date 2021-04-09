@@ -34,6 +34,9 @@ jobs:
       - name: install Build-Essential
         run:  sudo apt-get install build-essential
         
+      - name: run ls
+        run:  ls
+        
       # Runs a set of commands using the runners shell
       - name: install Gfortran etc..
         run: |
