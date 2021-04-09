@@ -39,7 +39,7 @@ jobs:
         mkdir build
         sudo cmake -S ./TestFort/src/ -B ./build
        
-       - name: Build 
+      - name: Build 
         run:  cmake --build ./build
         
       # Runs a set of commands using the runners shell
