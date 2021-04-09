@@ -1,0 +1,19 @@
+! the configured options and settings for test
+#define Terrain_VERSION_MAJOR @TestFortCross_VERSION_MAJOR@
+#define Terrain_VERSION_MINOR @TestFortCross_VERSION_MINOR@
+#define OS_TYPE "@CMAKE_SYSTEM_NAME@"
+#define PROCESSOR_TYPE "@CMAKE_HOST_SYSTEM_PROCESSOR@"
+#define __OS_Linux @CMAKE_Linux@
+#define __OS_Windows @CMAKE_Windows@
+
+#if __OS_Windows
+!use ifport
+!MAXPATH_LENGTH=$MAXPATH
+#define MAXPATH_LENGTH 255
+#define path_sep "\"
+#elif __OS_Linux
+#define MAXPATH_LENGTH 255
+#define path_sep "/"
+#endif
+
+
