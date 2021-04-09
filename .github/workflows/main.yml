@@ -29,8 +29,10 @@ jobs:
         
       - name: install Gfortran
         run:  sudo apt install gfortran
+        
       - name: install Cmake
         run:  sudo apt-get install cmake
+        
       - name: install Build-Essential
         run:  sudo apt-get install build-essential
         
