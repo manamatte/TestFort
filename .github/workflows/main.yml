@@ -40,7 +40,7 @@ jobs:
           sudo cmake -S ./TestFort/src/ -B ./build
        
       - name: Build 
-        run:  cmake --build ./build
+        run:  sudo cmake --build ./build
         
       # Runs a set of commands using the runners shell
       - name: install Gfortran etc..
