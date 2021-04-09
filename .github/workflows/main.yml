@@ -42,8 +42,11 @@ jobs:
       - name: Build 
         run:  sudo cmake --build ./build
         
+      - name: Simple run 
+        run:  ./build/TestFort
+        
       # Runs a set of commands using the runners shell
-      - name: install Gfortran etc..
+      - name: Bye
         run: |
           echo Bye, I am done!
           echo Bye Bye, I am done!
