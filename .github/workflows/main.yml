@@ -31,5 +31,5 @@ jobs:
       - name: install Gfortran etc..
         run: |
           sudo apt install gfortran
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          sudo apt-get install cmake
+          sudo apt-get install build-essential
