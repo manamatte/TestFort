@@ -20,7 +20,7 @@
 
     ! Body of TestFort
     print *, 'Hello World'
-    pause
+    print *, 'Hello World2'
 
     end program TestFort
 
