@@ -20,7 +20,7 @@
 
     ! Body of TestFort
     print *, 'Hello World'
-    print *, 'Hello World benenenenenenenene Bye'
+    print *, 'Hello World & Bye'
 
     end program TestFort
 
