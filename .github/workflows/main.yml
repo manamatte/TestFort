@@ -36,9 +36,9 @@ jobs:
       - name: install Build-Essential
         run:  sudo apt-get install build-essential
         
+      # mkdir build 
       - name: run Cmake
         run: |
-          mkdir build
           sudo cmake -S ./TestFort/src/ -B ./build
        
       - name: Build 
