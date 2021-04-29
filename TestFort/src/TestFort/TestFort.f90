@@ -22,6 +22,6 @@
     print *, 'Hello World'
     print *, 'Hello World & Bye'
     !stop 1999
-    call exit(512)
+    call exit(12)
     end program TestFort
 
